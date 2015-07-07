@@ -1,0 +1,18 @@
+To setup the repositories manually, instead of using the 'repo' command,
+these are the steps:
+
+# wb repository
+git clone https://github.com/dsiganos/wb.git
+cd wb
+git checkout tspace
+
+# wb-buildroot repository
+git clone  https://github.com/dsiganos/wb-buildroot.git buildroot
+cd buildroot && git checkout tspace
+
+# eventmon repository
+cd examples && git clone https://github.com/dsiganos/wb-event_mon.git eventmon
+cd examples/eventmon && git checkout tspace
+
+# to build
+make wb45n
