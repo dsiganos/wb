@@ -17,11 +17,11 @@ VER   := 2013.02
 PKG   := buildroot-$(VER)
 ARCHV := $(PKG).tar.bz2
 
-default: wb40n wb45n
+default: tspace_active_antenna
 
 all: wb40n wb45n msd40n msd45n msd45n-x86
 
-msd40n msd45n msd45n_fips wb40n wb45n wb45n_devel wb40n_devel msd45n-x86: unpack.stamp
+tspace_active_antenna msd40n msd45n msd45n_fips wb40n wb45n wb45n_devel wb40n_devel msd45n-x86: unpack.stamp
         # install the config file
 	$(MAKE) O=output/$@ -C buildroot $@_defconfig
 	$(MAKE) O=output/$@ -C buildroot
