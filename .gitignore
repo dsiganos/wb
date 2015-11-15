@@ -43,6 +43,9 @@
 /images/wb45n_devel/20??????
 /images/wb45n_devel/fw.txt
 
+/images/tspace_active_antenna/20??????
+/images/tspace_active_antenna/fw.txt
+
 /images/*/latest
 
 /examples/eventmon
