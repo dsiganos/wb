@@ -5,4 +5,4 @@ legal-info-wb45n legal-info-wb40n:
 tspace_active_antenna msd40n msd45n_fips msd45n wb40n wb40n_devel wb45n wb45n_devel msd45n-x86:
 	make -C $@ all
 
-.PHONY: msd40n wb40n wb40n_devel wb45n msd45n msd45n_fips wb45n_devel msd45n-x86 legal-info-wb45n legal-info-wb40n
+.PHONY: tspace_active_antenna msd40n wb40n wb40n_devel wb45n msd45n msd45n_fips wb45n_devel msd45n-x86 legal-info-wb45n legal-info-wb40n

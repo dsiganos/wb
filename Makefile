@@ -20,7 +20,7 @@ default: tspace_active_antenna
 
 all: wb40n wb45n msd40n msd45n msd45n-x86
 
-msd40n_config msd45n_config msd45n_fips_config wb40n_config wb45n_config wb45n_devel_config wb40n_devel_config msd45n-x86_config: unpack.stamp
+tspace_active_antenna_config msd40n_config msd45n_config msd45n_fips_config wb40n_config wb45n_config wb45n_devel_config wb40n_devel_config msd45n-x86_config: unpack.stamp
     # install the config file
     # $(subst _config,,$@) trims the _config part so we get clean directory and target
 	$(MAKE) O=output/$(subst _config,,$@) -C buildroot $(subst _config,,$@)_defconfig
